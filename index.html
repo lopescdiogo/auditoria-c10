@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Auditoria C10</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Auditoria C10">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#EAF4F7">
+<link rel="apple-touch-icon" href="icon-180.png?v=1">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest?v=1">
+<style>
+html,body{margin:0;height:100%;overflow:hidden;overscroll-behavior:none;background:#EAF4F7}
+body{position:fixed;inset:0}
+iframe{position:fixed;top:0;left:0;width:100%;height:100vh;height:100dvh;border:0;padding-top:env(safe-area-inset-top);box-sizing:border-box;background:#EAF4F7}
+</style>
+</head>
+<body>
+<iframe id="app" title="Auditoria C10" allow="clipboard-write"></iframe>
+<script>
+var APP='https://script.google.com/macros/s/AKfycbz7TQymS3wcSkf0MUhQJQz6k2U2KHsgRYj5VeTdyf1gYSltIRjZIRE62r8tR7ASj-pT/exec';
+var f=document.getElementById('app');
+function fit(){f.style.height=window.innerHeight+'px';}
+fit();addEventListener('resize',fit);addEventListener('orientationchange',function(){setTimeout(fit,300);});
+f.src=APP+'?t='+Date.now();
+// ao voltar pro app (30 s fora ou mais), recarrega a versao mais nova
+var hid=0;document.addEventListener('visibilitychange',function(){if(document.hidden){hid=Date.now();}else if(hid&&Date.now()-hid>30*1000){f.src=APP+'?t='+Date.now();}});
+addEventListener('pageshow',function(e){if(e.persisted){f.src=APP+'?t='+Date.now();}});
+</script>
+</body>
+</html>
